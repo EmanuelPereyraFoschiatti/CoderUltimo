@@ -1,0 +1,41 @@
+
+/* body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+img{
+    display:block;
+    width: 100px;
+}
+
+.main-nave{
+    display: none;
+}
+
+.container-products{
+    display: flex;
+}
+
+.producto{
+    height: 350px; 
+    width: 125%;
+    box-shadow: 0 0 7px #111;
+    margin:0 30px;
+    padding: 30px;
+    background-color: aqua;
+
+}
+.producto.card{
+    height:300px; 
+    width: 200%;
+    margin-bottom:170px;
+
+}
+.card img{
+    margin: auto;
+    display: block;
+
+}
