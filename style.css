@@ -6,19 +6,154 @@
     justify-content: center;
     align-items: center;
 } */
-img{
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 1 / 3 / 2; }
+    .div2 { grid-area: 2 / 2 / 3 / 3; }
+    .div3 { grid-area: 2 / 3 / 3 / 4; }
+    .div4 { grid-area: 3 / 1 / 4 / 2; }
+    .div5 { grid-area: 3 / 2 / 4 / 3; }
+    .div6 { grid-area: 3 / 3 / 4 / 4; }
+    .div7 { grid-area: 4 / 1 / 5 / 2; }
+    .div8 { grid-area: 4 / 2 / 5 / 3; }
+    .div9 { grid-area: 4 / 3 / 5 / 4; }
+    .div10 { grid-area: 2 / 4 / 3 / 5; }
+    .div11 { grid-area: 2 / 4 / 5 / 5; }
+    .div12 { grid-area: 1 / 1 / 2 / 5; }
+    .div13 { grid-area: 5 / 1 / 6 / 5; }
+/* img{
     display:block;
     width: 100px;
-}
+} */
 
-.main-nave{
+/* .main-nave{
     display: none;
-}
+} */
+
+.nav-item {
+    display : flex;
+    justify-content : end;
+    }
 
 .container-products{
-    display: flex;
+    /* display: flex; */
+    display : grid;
+grid-template-columns : 1fr 1fr 1fr 1fr;
+grid-template-rows : 1fr 1fr 1fr;
+gap : 0 0;
+grid-auto-flow : row;
+grid-template-areas : "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8 foto9";
+border : black solid 1px;
 }
 
+img {
+    border : black solid 1px;
+    width : 100px;
+    height : 100px;
+    display : flex;
+    justify-content : center;
+    }
+    .foto1 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto1 texto1 texto1";
+        grid-area : foto1;
+        }
+        .texto1 {
+        grid-area : texto1;
+        }
+        .foto2 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto2 texto2 texto2";
+        grid-area : foto2;
+        }
+        .texto2 {
+        grid-area : texto2;
+        }
+        .foto3 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto3 texto3 texto3";
+        grid-area : foto3;
+        }
+        .texto3 {
+        grid-area : texto3;
+        }
+        .foto4 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto4 texto4 texto4";
+        grid-area : foto4;
+        }
+        .texto4 {
+        grid-area : texto4;
+        }
+        .foto5 {
+        display : grid;
+        grid-template-columns : 0.9fr 1.1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto5 texto5 texto5";
+        grid-area : foto5;
+        }
+        .texto5 {
+        grid-area : texto5;
+        }
+        .foto6 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto6 texto6 texto6";
+        grid-area : foto6;
+        }
+        .texto6 {
+        grid-area : texto6;
+        }
+        .foto7 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto7 texto7 texto7";
+        grid-area : foto7;
+        }
+        .texto7 {
+        grid-area : texto7;
+        }
+        .foto8 {
+        display : grid;
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr 1fr;
+        gap : 0 0;
+        grid-auto-flow : row;
+        grid-template-areas : ". . ." ". . ." "texto8 texto8 texto8";
+        grid-area : foto8;
+        }
 .producto{
     height: 350px; 
     width: 125%;
@@ -29,9 +164,10 @@ img{
 
 }
 .producto.card{
-    height:300px; 
-    width: 200%;
+    height:100px; 
+    width: 100%;
     margin-bottom:170px;
+    border: 1 px solid;
 
 }
 .card img{
