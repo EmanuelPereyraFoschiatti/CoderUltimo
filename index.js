@@ -24,14 +24,12 @@ class Producto {
   for (let i = 0; i < productos.length; i++) {
     
     let divproducto = document.createElement("div")
-    divproducto.classList.add("card")
     
     let imagen = document.createElement("img")
     imagen.setAttribute("src",productos[i].foto)
     divproducto.append(imagen)
 
     let informacion = document.createElement("div")
-    informacion.classList.add("informacion")
     
     let h1 = document.createTextNode(productos[i].nombre)
     informacion.appendChild(h1)
